@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Planetary-Statistic",
+    "slug": "Planetary-Statistic",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/spash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.nitish0844.PlanetaryStatistic"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
