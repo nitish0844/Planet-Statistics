@@ -50,25 +50,25 @@ const RootNavigator = () => {
           tabBarActiveTintColor: "tomato",
           tabBarInactiveTintColor: "gray",
           tabBarIcon: ({ focused, size, colour }) => {
-            // let iconName;
-            // if (route.name === "Home") {
-            //   iconName = focused ? "home-variant" : "home-variant-outline";
-            // } else if (route.name === "Planetsapi") {
-            //   iconName = focused ? "earth" : "google-earth";
-            // } else if (route.name === "Isslocation") {
-            //   iconName = focused ? "satellite-uplink" : "satellite-variant";
-            // } else if (route.name === "DataSol") {
-            //   iconName = focused ? "robot" : "robot-outline";
-            // }
-
             let iconName;
             if (route.name === "Home") {
               iconName = focused ? "home-variant" : "home-variant-outline";
             } else if (route.name === "Planetsapi") {
               iconName = focused ? "earth" : "google-earth";
+            } else if (route.name === "Isslocation") {
+              iconName = focused ? "satellite-uplink" : "satellite-variant";
             } else if (route.name === "DataSol") {
               iconName = focused ? "robot" : "robot-outline";
             }
+
+            // let iconName;
+            // if (route.name === "Home") {
+            //   iconName = focused ? "home-variant" : "home-variant-outline";
+            // } else if (route.name === "Planetsapi") {
+            //   iconName = focused ? "earth" : "google-earth";
+            // } else if (route.name === "DataSol") {
+            //   iconName = focused ? "robot" : "robot-outline";
+            // }
             return (
               // <View style={{ backgroundColor: focused ? "red" : "blue" }}>
               <MaterialCommunityIcons
@@ -102,7 +102,7 @@ const RootNavigator = () => {
           name="Planetsapi"
           component={Planetsapi}
         />
-        {/* <Tab.Screen
+        <Tab.Screen
           options={{
             header: () => null,
             tabBarLabel: () => {
@@ -111,7 +111,7 @@ const RootNavigator = () => {
           }}
           name="Isslocation"
           component={IssLocation}
-        /> */}
+        />
         <Tab.Screen
           options={{
             header: () => null,
